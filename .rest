@@ -1,1 +1,69 @@
 ###
+GET http://localhost:4008/api/users
+
+###
+POST http://localhost:4008/api/users
+Content-Type: application/json
+
+{
+    "names": "Sunlight Admin",
+    "username": "admin",
+    "password": "Sunlight@123",
+    "userType": "ADMIN"
+}
+
+###
+POST http://localhost:4008/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "Sunlight@123"
+}
+
+
+###
+GET http://localhost:4008/api/students
+
+
+###
+POST http://localhost:4008/api/students
+Content-Type: application/json
+
+{
+    "studentID": "STD643",
+    "firstName": "Student 1",
+    "lastName": "IPRCE",
+    "class": "Software Engineering A"
+}
+
+
+
+###
+GET http://localhost:4008/api/marks
+
+
+
+###
+POST http://localhost:4008/api/marks
+Content-Type: application/json
+
+{
+    "student": "6193668e7dd3bd1958934422",
+   
+    "totalMathMarks": "50",
+    "totalEnglishMarks": "50",
+    "totalSocialMarks": "50",
+    "totalFrenchMarks": "50",
+    "totalKinyarwandaMarks": "50",
+    "totalFullMarks": "250",
+
+    "mathMarks":"30",
+    "englishMarks": "40",
+    "socialMarks": "40",
+    "frenchMarks": "40",
+    "kinyarwandaMarks": "40",
+    "totalMarks": "190",
+    "averageMarks": "38",
+    "percentage": "76"
+}
