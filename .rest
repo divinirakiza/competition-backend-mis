@@ -1,5 +1,6 @@
 ###
 GET http://localhost:4008/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTkzNjVhZTFiYWZmYjAyZTQ1MGExMWUiLCJuYW1lcyI6IlN1bmxpZ2h0IEFkbWluIiwidXNlcm5hbWUiOiJhZG1pbiIsInVzZXJUeXBlIjoiQURNSU4iLCJpYXQiOjE2MzcwNTIzNTN9.aJJX0vLheJmmjmoXnmxA0wYXDzHB7e8QG1Xw9gcsgms
 
 ###
 POST http://localhost:4008/api/users
